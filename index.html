@@ -41,28 +41,35 @@
         </div>
     </nav>
 
-    <!-- Andrey - Primeiro container com banner (foto do artista), titulo da pagina, introdução e botão de "Ouvir Agora" -->
-    <div id="banner-container" class="container-fluid vh-100 w-100">
-        <div class="row">
-            <div class="col-12">
-                <!-- Texto com a fonte que foi importada -->
-                <h1 id="artista-title" class="position-absolute top-50 start-50 translate-middle text-center w-100 bebas-neue-regular" style="color: white;">Travis Scott</h1>
+<!-- Andrey - Primeiro container com banner (foto do artista), titulo da pagina, introdução e botão de "Ouvir Agora" -->
+<div id="banner-container" class="container-fluid vh-100 w-100 position-relative">
+    <div class="row h-100">
+        <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+            <!-- Texto com a fonte que foi importada -->
+            <h1 id="artista-title" class="text-center w-75 w-md-50 bebas-neue-regular">
+                Travis Scott
+            </h1>
 
-                <!-- Forcando uma div com posicionamento embaixo na esquerda(start) -->
-                <div class="position-absolute bottom-0 p-3">
-                    <p class="text-white w-75 m-0">Travis Scott é um rapper, cantor e produtor musical conhecido por suas performances energéticas e produções inovadoras. Seu álbum 'ASTROWORLD' se tornou um marco na cultura hip-hop, misturando trap e elementos psicodélicos. Além da música, ele é reconhecido por suas colaborações com marcas como Nike e por seu festival 'Utopia', que reúne grandes nomes da indústria.</p>
-                    <!-- Botão de "Ouvir Agora" -->
-                    <button type="button" class="btn btn-success btn-lg mt-2 btn-custom-color">Ouvir Agora</button>
-                </div>
+            <!-- Forçando uma div com posicionamento embaixo na esquerda (start) -->
+            <div class="position-absolute bottom-0 p-3 w-100 w-md-75">
+                <p class="text-white m-0">
+                    Travis Scott é um rapper, cantor e produtor musical conhecido por suas performances energéticas e produções inovadoras. Seu álbum 'ASTROWORLD' se tornou um marco na cultura hip-hop, misturando trap e elementos psicodélicos. Além da música, ele é reconhecido por suas colaborações com marcas como Nike e por seu festival 'Utopia', que reúne grandes nomes da indústria.
+                </p>
+                <!-- Botão de "Ouvir Agora" -->
+                <a href="https://music.youtube.com/channel/UCf_gP4AMRSgAfyzbkeS9k4g?si=ZPcUxIrpdCh1appf" target="_blank" class="btn btn-success btn-lg mt-2 btn-custom-color">
+                    Ouvir Agora
+                </a>
             </div>
         </div>
     </div>
+</div>
+
 
     <!-- Andrey - Lista com tres albuns ou musicas favoritas e lista de tres curiosidades -->
-    <div id="banner-lista01" class="container-fluid w-100 mt-4">
+    <div id="banner-lista01" class="container-fluid w-100 mt-5">
         <div class="row justify-content-evenly">
             <div class="col-md-6 col-sm-12 mt-3 text-white">
-                <div class="bg-dark bg-opacity-75 border border-light rounded-4 p-3">
+                <div class="bg-dark bg-opacity-75 rounded-4 p-3">
                     <h5 class="text-center fw-bold"><i class="bi bi-star-fill me-1"></i> Musicas Favoritas</h5>
                     <ol class="lista01-custom mt-4">
                         <li><a href="https://www.youtube.com/watch?v=U-l4ya3ejko" target="_blank" class="link-offset-2 link-light link-underline link-underline-opacity-0">FE!N (feat. Playboi Carti)</a></li>
@@ -74,7 +81,7 @@
                 </div>
             </div>
             <div class="col-md-6 col-sm-12 mt-3 text-white">
-                <div class="bg-dark bg-opacity-75 border border-light rounded-4 p-3">
+                <div class="bg-dark bg-opacity-75 rounded-4 p-3">
                     <h5 class="text-center fw-bold"><i class="bi bi-search me-1"></i> Curiosidades</h5>
                     <ul class="lista01-custom mt-4">
                         <li>Travis Scott nasceu como Jacques Webster Jr. em Houston, Texas.</li>
@@ -90,53 +97,53 @@
 
     <!-- Erick - Segundo container com oito capas de albuns -->
     <!-- Desafio 4 e 8, aqui decidimos juntar os 2 desafios neste container, pois os dois tem informações parecidas --> 
-    <div id="banner-albuns" class="container-fluid w-100 mt-4">
+    <div id="banner-albuns" class="container-fluid w-100 mt-5">
         <div class="row">
             <h1 id='outrosestilos' class="fs-3 text-white fst-italic fw-bolder">Álbuns</h1>
             <div class="col-md-3 col-sm-6 mt-3 d-flex justify-content-center">
-                <div class="album w-75">
+                <div class="album bg-dark w-75">
                     <img src="https://i.scdn.co/image/ab67616d0000b2730fc93fe41791c5aa51ae9645" alt="Days Before Rodeo">
                     <p>Days Before Rodeo (2014)</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 mt-3 d-flex justify-content-center">
-                <div class="album w-75">
+                <div class="album bg-dark w-75">
                     <img src="https://i.scdn.co/image/ab67616d0000b2736cfd9a7353f98f5165ea6160" alt="Rodeo">
                     <p>Rodeo (2015)</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 mt-3 d-flex justify-content-center">
-                <div class="album w-75">
+                <div class="album bg-dark w-75">
                     <img src="http://i.scdn.co/image/ab67616d0000b273f54b99bf27cda88f4a7403ce" alt="Birds in the Trap Sing McKnight">
                     <p>Birds in the Trap Sing McKnight (2016)</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 mt-3 d-flex justify-content-center">
-                <div class="album w-75">
+                <div class="album bg-dark w-75">
                     <img src="https://i.scdn.co/image/ab67616d0000b273c4daf0fda7e16ba5b0f86830" alt="Rogue Waves">
                     <p>Rogue Waves (2016)</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 mt-3 d-flex justify-content-center">
-                <div class="album w-75">
+                <div class="album bg-dark w-75">
                     <img src="https://i.scdn.co/image/ab67616d0000b273072e9faef2ef7b6db63834a3" alt="Astroworld">
                     <p>Astroworld (2018)</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 mt-3 d-flex justify-content-center">
-                <div class="album w-75">
+                <div class="album bg-dark w-75">
                     <img src="https://i.scdn.co/image/ab67616d0000b273dfc2f59568272de50a257f2f" alt="JackBoys">
                     <p>JackBoys (2019)</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 mt-3 d-flex justify-content-center">
-                <div class="album w-75">
+                <div class="album bg-dark w-75">
                     <img src="https://i.scdn.co/image/ab67616d0000b273e42b5fea4ac4c3d6328b622b" alt="Highest in the room">
                     <p>Highest in the room (2019)</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 mt-3 d-flex justify-content-center">
-                <div class="album w-75">
+                <div class="album bg-dark w-75">
                     <img src="https://i.scdn.co/image/ab67616d0000b273881d8d8378cd01099babcd44" alt="Utopia">
                     <p>Utopia (2023)</p>
                 </div>
@@ -144,58 +151,15 @@
         </div>
     </div>
 
-    <!-- Eduardo - Container com lista estilizada com seletores -->
-    <div id="listaseletores" class="container-fluid w-100 mt-4">
-        <div class="row text-white justify-content-evenly">
-            <h1 id="outrosestilos" class="fs-3 text-white fst-italic fw-bolder">Sugestões</h1>
-            <div class="col-md-3 col-sm-12 mt-3">
-                <div class='bg-dark bg-opacity-75 border border-light rounded-4 p-3'>
-                    <h1 class='text-center'><i id="estrela" class="bi bi-star-fill me-1"></i> Rock</h1>
-                    <ul class="p-0 m-0">
-                        <li><a target="_blank" class="link-offset-2 link-underline link-underline-opacity-0" href="https://music.youtube.com/channel/UCxVTgYCPCz5Iib9iik9M2bg?si=qVwhAet_Cy5y0Y1f"><i class="bi bi-arrow-return-right"></i> Charlie Brown Jr.</a></li>
-                        <li><a target="_blank" class="link-offset-2 link-underline link-underline-opacity-0" href="https://music.youtube.com/channel/UCxgN32UVVztKAQd2HkXzBtw?si=CeKCxx64f579IFnO"><i class="bi bi-arrow-return-right"></i> Linkin Park</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-12 mt-3">
-                <div class='bg-dark bg-opacity-75 border border-light rounded-4 p-3'>
-                    <h1 class='text-center'><i id="pessoa" class="bi bi-person-arms-up me-1"></i> Pop</h1>
-                    <ul class="p-0 m-0">
-                        <li><a target="_blank" class="link-offset-2 link-underline link-underline-opacity-0" href="https://music.youtube.com/channel/UCyD3XWRK9ko-izf2nBSFitw?si=osXqp6gpcuDrsYeq"><i class="bi bi-arrow-return-right"></i> Post Malone</a></li>
-                        <li><a target="_blank" class="link-offset-2 link-underline link-underline-opacity-0" href="https://music.youtube.com/channel/UCGvj8kfUV5Q6lzECIrGY19g?si=e9jzR5UMHIWGjJpp"><i class="bi bi-arrow-return-right"></i> Justin Bieber</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-12 mt-3">
-                <div class='bg-dark bg-opacity-75 border border-light rounded-4 p-3'>
-                    <h1 class='text-center'><i id="vinil" class="bi bi-vinyl-fill me-1"></i> Jazz</h1>
-                    <ul class="p-0 m-0">
-                        <li><a target="_blank" class="link-offset-2 link-underline link-underline-opacity-0" href="https://music.youtube.com/channel/UCW-raws5Iq2xLADkLcEoVaA?si=ICTa6a0Xipm7bznh"><i class="bi bi-arrow-return-right"></i> Billie Holiday</a></li>
-                        <li><a target="_blank" class="link-offset-2 link-underline link-underline-opacity-0" href="https://music.youtube.com/channel/UCSdp2Pdr3qLI4UWNDSTWEsw?si=28hbfXn_9ppPXcUf"><i class="bi bi-arrow-return-right"></i> Roney James</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-12 mt-3">
-                <div class='bg-dark bg-opacity-75 border border-light rounded-4 p-3'>
-                    <h1 class='text-center'><i id="microfone" class="bi bi-mic me-1"></i> MPB</h1>
-                    <ul class="p-0 m-0">
-                        <li><a target="_blank" class="link-offset-2 link-underline link-underline-opacity-0" href="https://music.youtube.com/channel/UC7j6BgbBpZ5oOZAoX-gIHFQ?si=Fmzm0BWXSa2_d1BU"><i class="bi bi-arrow-return-right"></i> Legião Urbana</a></li>
-                        <li><a target="_blank" class="link-offset-2 link-underline link-underline-opacity-0" href="https://music.youtube.com/channel/UCQRnyQKP5Fm7fSIU_faGA6Q?si=NRq8K0HgY364z3ke"><i class="bi bi-arrow-return-right"></i> Engenheiros do Hawaii</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Desafio 5: Grade de Shows com CSS Grid --> 
     <!-- Erick - container com grade de shows -->
-    <div id="shows-container" class="container-fluid w-100 mt-4">
+    <div id="shows-container" class="container-fluid w-100 mt-5">
         <div class="row justify-content-center">
             <div class=" col-12">
                 <h1 id="outrosestilos" class="fs-3 text-white fst-italic fw-bolder">Grade de Shows</h1>
-                <div class="bg-dark rounded-4 p-1 mt-3 border border-light">
+                <div class="bg-dark rounded-4 p-1 mt-3">
                     <table class="table">
-                        <thead class="table-dark tabela-shows">
+                        <thead class="table-dark tabela-shows-header fw-bold">
                           <tr>
                             <th>Data</th>
                             <th>Local</th>
@@ -235,6 +199,49 @@
                           </tr>
                         </tbody>
                       </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Eduardo - Container com lista estilizada com seletores -->
+    <div id="listaseletores" class="container-fluid w-100 mt-5">
+        <div class="row text-white justify-content-evenly">
+            <h1 id="outrosestilos" class="fs-3 text-white fst-italic fw-bolder">Sugestões</h1>
+            <div class="col-md-3 col-sm-12 mt-3">
+                <div class='bg-dark rounded-4 p-3'>
+                    <h1 class='text-center'><i id="estrela" class="bi bi-star-fill me-1"></i> Rock</h1>
+                    <ul class="p-0 m-0">
+                        <li><a target="_blank" class="link-offset-2 link-underline link-underline-opacity-0" href="https://music.youtube.com/channel/UCxVTgYCPCz5Iib9iik9M2bg?si=qVwhAet_Cy5y0Y1f"><i class="bi bi-arrow-return-right"></i> Charlie Brown Jr.</a></li>
+                        <li><a target="_blank" class="link-offset-2 link-underline link-underline-opacity-0" href="https://music.youtube.com/channel/UCxgN32UVVztKAQd2HkXzBtw?si=CeKCxx64f579IFnO"><i class="bi bi-arrow-return-right"></i> Linkin Park</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mt-3">
+                <div class='bg-dark rounded-4 p-3'>
+                    <h1 class='text-center'><i id="pessoa" class="bi bi-person-arms-up me-1"></i> Pop</h1>
+                    <ul class="p-0 m-0">
+                        <li><a target="_blank" class="link-offset-2 link-underline link-underline-opacity-0" href="https://music.youtube.com/channel/UCyD3XWRK9ko-izf2nBSFitw?si=osXqp6gpcuDrsYeq"><i class="bi bi-arrow-return-right"></i> Post Malone</a></li>
+                        <li><a target="_blank" class="link-offset-2 link-underline link-underline-opacity-0" href="https://music.youtube.com/channel/UCGvj8kfUV5Q6lzECIrGY19g?si=e9jzR5UMHIWGjJpp"><i class="bi bi-arrow-return-right"></i> Justin Bieber</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mt-3">
+                <div class='bg-dark rounded-4 p-3'>
+                    <h1 class='text-center'><i id="vinil" class="bi bi-vinyl-fill me-1"></i> Jazz</h1>
+                    <ul class="p-0 m-0">
+                        <li><a target="_blank" class="link-offset-2 link-underline link-underline-opacity-0" href="https://music.youtube.com/channel/UCW-raws5Iq2xLADkLcEoVaA?si=ICTa6a0Xipm7bznh"><i class="bi bi-arrow-return-right"></i> Billie Holiday</a></li>
+                        <li><a target="_blank" class="link-offset-2 link-underline link-underline-opacity-0" href="https://music.youtube.com/channel/UCSdp2Pdr3qLI4UWNDSTWEsw?si=28hbfXn_9ppPXcUf"><i class="bi bi-arrow-return-right"></i> Roney James</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mt-3">
+                <div class='bg-dark rounded-4 p-3'>
+                    <h1 class='text-center'><i id="microfone" class="bi bi-mic me-1"></i> MPB</h1>
+                    <ul class="p-0 m-0">
+                        <li><a target="_blank" class="link-offset-2 link-underline link-underline-opacity-0" href="https://music.youtube.com/channel/UC7j6BgbBpZ5oOZAoX-gIHFQ?si=Fmzm0BWXSa2_d1BU"><i class="bi bi-arrow-return-right"></i> Legião Urbana</a></li>
+                        <li><a target="_blank" class="link-offset-2 link-underline link-underline-opacity-0" href="https://music.youtube.com/channel/UCQRnyQKP5Fm7fSIU_faGA6Q?si=NRq8K0HgY364z3ke"><i class="bi bi-arrow-return-right"></i> Engenheiros do Hawaii</a></li>
+                    </ul>
                 </div>
             </div>
         </div>

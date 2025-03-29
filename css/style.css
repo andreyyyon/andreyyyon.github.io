@@ -22,12 +22,24 @@ h5{
 }
 
 #artista-title {
-    transition: font-size 4s ease;
+    color: white;
 }
 
-#banner-container:hover{    
+@media (min-width: 640px) {
     #artista-title {
-        font-size: 100px;
+        transition: font-size 4s ease;
+        font-size: 6rem;
+    }
+    #banner-container:hover{       
+        #artista-title {
+            font-size: 7rem;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    #artista-title {
+        font-size: 3rem; /* Menor fonte no mobile */
     }
 }
 
@@ -58,7 +70,6 @@ h5{
 /* Capas de Álbuns */
 
 .album {
-    background-color: #222;
     padding: 10px;
     border-radius: 10px;
     text-align: center;
@@ -73,9 +84,8 @@ h5{
 
 .album p {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 15px;
     color: white;
-    font-family: "Bebas Neue", sans-serif;
 }
 
 .albuns-titulo {
@@ -87,19 +97,20 @@ h5{
 }
 
 .album:hover {
-    transform: scale(1.1); 
-    box-shadow: 0 0 15px rgba(13, 202, 240, 0.6); 
-}
-
-.album:hover img {
-    border: 2px solid #0dcaf0; 
+    transform: scale(1); 
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
 }
 
 .tabela-shows {
     text-align: center;
-    font-size: 25px;
-    font-family: "Bebas Neue", sans-serif;
+    font-size: 15px;
 }
+
+.tabela-shows-header {
+    text-align: center;
+    font-size: 20px;
+}
+
 #corclick:active, #corclick:focus {
     background-color: darkgreen;
     color: white;
