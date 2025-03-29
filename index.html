@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <!-- Importando fontes do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+    <!-- Declarando o arquivo CSS do Bootstrap e externo -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>SomWeb</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+</head>
+<body class="nunito-sans-custom bg-black">
+
+    <!-- Eduardo - Navbar com botão de dropdown -->
+    <nav class="navbar bg-dark sticky-top bg-opacity-75">
+        <div class="container-fluid m-0">
+          <a class="navbar-brand" href="#">
+            <i class="bi text-white fs-3 ps-2 bi-boombox-fill"></i>
+            <div class="dropdown d-flex justify-content-end">
+                <a id=corclick class="btn btn-success dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Gêneros Musicais
+                </a>
+              
+                <ul class="dropdown-menu bg-dark">
+                  <li><a target=_blank class="dropdown-item text-white text-center" href="https://music.youtube.com/playlist?list=RDATgFX&playnext=1&si=3cdBh46wlq-tEGGc">Rock</a></li>
+                  <li><a target=_blank class="dropdown-item text-white text-center" href="https://music.youtube.com/playlist?list=RDATg9X&playnext=1&si=qSCx4rP-dZIi6EEF">Pop</a></li>
+                  <li><a target=_blank class="dropdown-item text-white text-center" href="https://music.youtube.com/playlist?list=RDATgy&playnext=1&si=U4mCLL4GcczFmwXO">Jazz</a></li>
+                  <li><a target=_blank class="dropdown-item text-white text-center" href="https://music.youtube.com/playlist?list=RDATg7X&playnext=1&si=w9n8H-LVEkzLbSZa">MPB</a></li>
+                </ul>
+              </div>
+          </a>
+        </div>
+    </nav>
+
+    <!-- Andrey - Primeiro container com banner (foto do artista), titulo da pagina, introdução e botão de "Ouvir Agora" -->
+    <div id="banner-container" class="container-fluid vh-100 w-100">
+        <div class="row">
+            <div class="col-12">
+                <!-- Texto com a fonte que foi importada -->
+                <h1 id="artista-title" class="position-absolute top-50 start-50 translate-middle text-center w-100 bebas-neue-regular" style="color: white;">Travis Scott</h1>
+
+                <!-- Forcando uma div com posicionamento embaixo na esquerda(start) -->
+                <div class="position-absolute bottom-0 p-3">
+                    <p class="text-white w-75 m-0">Travis Scott é um rapper, cantor e produtor musical conhecido por suas performances energéticas e produções inovadoras. Seu álbum 'ASTROWORLD' se tornou um marco na cultura hip-hop, misturando trap e elementos psicodélicos. Além da música, ele é reconhecido por suas colaborações com marcas como Nike e por seu festival 'Utopia', que reúne grandes nomes da indústria.</p>
+                    <!-- Botão de "Ouvir Agora" -->
+                    <button type="button" class="btn btn-success btn-lg mt-2 btn-custom-color">Ouvir Agora</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Andrey - Lista com tres albuns ou musicas favoritas e lista de tres curiosidades -->
+    <div id="banner-lista01" class="container-fluid w-100 mt-4">
+        <div class="row justify-content-evenly">
+            <div class="col-md-6 col-sm-12 mt-3 text-white">
+                <div class="bg-dark bg-opacity-75 border border-light rounded-4 p-3">
+                    <h5 class="text-center fw-bold"><i class="bi bi-star-fill me-1"></i> Musicas Favoritas</h5>
+                    <ol class="lista01-custom mt-4">
+                        <li><a href="https://www.youtube.com/watch?v=U-l4ya3ejko" target="_blank" class="link-offset-2 link-light link-underline link-underline-opacity-0">FE!N (feat. Playboi Carti)</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=Dst9gZkq1a8" target="_blank" class="link-offset-2 link-light link-underline link-underline-opacity-0">goosebumps</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=I0fgkcTbBoI" target="_blank" class="link-offset-2 link-light link-underline link-underline-opacity-0">Type Shit</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=tfSS1e3kYeo" target="_blank" class="link-offset-2 link-light link-underline link-underline-opacity-0">HIGHEST IN THE ROOM</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=6ONRf7h3Mdk" target="_blank" class="link-offset-2 link-light link-underline link-underline-opacity-0">SICKO MODE</a></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 mt-3 text-white">
+                <div class="bg-dark bg-opacity-75 border border-light rounded-4 p-3">
+                    <h5 class="text-center fw-bold"><i class="bi bi-search me-1"></i> Curiosidades</h5>
+                    <ul class="lista01-custom mt-4">
+                        <li>Travis Scott nasceu como Jacques Webster Jr. em Houston, Texas.</li>
+                        <li>Ele tem uma filha chamada Stormi, com Kylie Jenner.</li>
+                        <li>Travis fez um show virtual no Fortnite que atraiu milhões de jogadores.</li>
+                        <li>Seu nome artístico é inspirado no nome de seu tio e de Travis Barker.</li>
+                        <li>Ele colaborou com o McDonald's em 2020, criando o "Travis Scott Meal".</li>
+                    </ul>
+                </div>    
+            </div>
+        </div>
+    </div>
+
+    <!-- Erick - Segundo container com oito capas de albuns -->
+    <!-- Desafio 4 e 8, aqui decidimos juntar os 2 desafios neste container, pois os dois tem informações parecidas --> 
+    <div id="banner-albuns" class="container-fluid w-100 mt-4">
+        <div class="row">
+            <h1 id='outrosestilos' class="fs-3 text-white fst-italic fw-bolder">Álbuns</h1>
+            <div class="col-md-3 col-sm-6 mt-3 d-flex justify-content-center">
+                <div class="album w-75">
+                    <img src="https://i.scdn.co/image/ab67616d0000b2730fc93fe41791c5aa51ae9645" alt="Days Before Rodeo">
+                    <p>Days Before Rodeo (2014)</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mt-3 d-flex justify-content-center">
+                <div class="album w-75">
+                    <img src="https://i.scdn.co/image/ab67616d0000b2736cfd9a7353f98f5165ea6160" alt="Rodeo">
+                    <p>Rodeo (2015)</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mt-3 d-flex justify-content-center">
+                <div class="album w-75">
+                    <img src="http://i.scdn.co/image/ab67616d0000b273f54b99bf27cda88f4a7403ce" alt="Birds in the Trap Sing McKnight">
+                    <p>Birds in the Trap Sing McKnight (2016)</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mt-3 d-flex justify-content-center">
+                <div class="album w-75">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273c4daf0fda7e16ba5b0f86830" alt="Rogue Waves">
+                    <p>Rogue Waves (2016)</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mt-3 d-flex justify-content-center">
+                <div class="album w-75">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273072e9faef2ef7b6db63834a3" alt="Astroworld">
+                    <p>Astroworld (2018)</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mt-3 d-flex justify-content-center">
+                <div class="album w-75">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273dfc2f59568272de50a257f2f" alt="JackBoys">
+                    <p>JackBoys (2019)</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mt-3 d-flex justify-content-center">
+                <div class="album w-75">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273e42b5fea4ac4c3d6328b622b" alt="Highest in the room">
+                    <p>Highest in the room (2019)</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mt-3 d-flex justify-content-center">
+                <div class="album w-75">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273881d8d8378cd01099babcd44" alt="Utopia">
+                    <p>Utopia (2023)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Eduardo - Container com lista estilizada com seletores -->
+    <div id="listaseletores" class="container-fluid w-100 mt-4">
+        <div class="row text-white justify-content-evenly">
+            <h1 id="outrosestilos" class="fs-3 text-white fst-italic fw-bolder">Sugestões</h1>
+            <div class="col-md-3 col-sm-12 mt-3">
+                <div class='bg-dark bg-opacity-75 border border-light rounded-4 p-3'>
+                    <h1 class='text-center'><i id="estrela" class="bi bi-star-fill me-1"></i> Rock</h1>
+                    <ul class="p-0 m-0">
+                        <li><a target="_blank" class="link-offset-2 link-underline link-underline-opacity-0" href="https://music.youtube.com/channel/UCxVTgYCPCz5Iib9iik9M2bg?si=qVwhAet_Cy5y0Y1f"><i class="bi bi-arrow-return-right"></i> Charlie Brown Jr.</a></li>
+                        <li><a target="_blank" class="link-offset-2 link-underline link-underline-opacity-0" href="https://music.youtube.com/channel/UCxgN32UVVztKAQd2HkXzBtw?si=CeKCxx64f579IFnO"><i class="bi bi-arrow-return-right"></i> Linkin Park</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mt-3">
+                <div class='bg-dark bg-opacity-75 border border-light rounded-4 p-3'>
+                    <h1 class='text-center'><i id="pessoa" class="bi bi-person-arms-up me-1"></i> Pop</h1>
+                    <ul class="p-0 m-0">
+                        <li><a target="_blank" class="link-offset-2 link-underline link-underline-opacity-0" href="https://music.youtube.com/channel/UCyD3XWRK9ko-izf2nBSFitw?si=osXqp6gpcuDrsYeq"><i class="bi bi-arrow-return-right"></i> Post Malone</a></li>
+                        <li><a target="_blank" class="link-offset-2 link-underline link-underline-opacity-0" href="https://music.youtube.com/channel/UCGvj8kfUV5Q6lzECIrGY19g?si=e9jzR5UMHIWGjJpp"><i class="bi bi-arrow-return-right"></i> Justin Bieber</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mt-3">
+                <div class='bg-dark bg-opacity-75 border border-light rounded-4 p-3'>
+                    <h1 class='text-center'><i id="vinil" class="bi bi-vinyl-fill me-1"></i> Jazz</h1>
+                    <ul class="p-0 m-0">
+                        <li><a target="_blank" class="link-offset-2 link-underline link-underline-opacity-0" href="https://music.youtube.com/channel/UCW-raws5Iq2xLADkLcEoVaA?si=ICTa6a0Xipm7bznh"><i class="bi bi-arrow-return-right"></i> Billie Holiday</a></li>
+                        <li><a target="_blank" class="link-offset-2 link-underline link-underline-opacity-0" href="https://music.youtube.com/channel/UCSdp2Pdr3qLI4UWNDSTWEsw?si=28hbfXn_9ppPXcUf"><i class="bi bi-arrow-return-right"></i> Roney James</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 mt-3">
+                <div class='bg-dark bg-opacity-75 border border-light rounded-4 p-3'>
+                    <h1 class='text-center'><i id="microfone" class="bi bi-mic me-1"></i> MPB</h1>
+                    <ul class="p-0 m-0">
+                        <li><a target="_blank" class="link-offset-2 link-underline link-underline-opacity-0" href="https://music.youtube.com/channel/UC7j6BgbBpZ5oOZAoX-gIHFQ?si=Fmzm0BWXSa2_d1BU"><i class="bi bi-arrow-return-right"></i> Legião Urbana</a></li>
+                        <li><a target="_blank" class="link-offset-2 link-underline link-underline-opacity-0" href="https://music.youtube.com/channel/UCQRnyQKP5Fm7fSIU_faGA6Q?si=NRq8K0HgY364z3ke"><i class="bi bi-arrow-return-right"></i> Engenheiros do Hawaii</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Desafio 5: Grade de Shows com CSS Grid --> 
+    <!-- Erick - container com grade de shows -->
+    <div id="shows-container" class="container-fluid w-100 mt-4">
+        <div class="row justify-content-center">
+            <div class=" col-12">
+                <h1 id="outrosestilos" class="fs-3 text-white fst-italic fw-bolder">Grade de Shows</h1>
+                <div class="bg-dark rounded-4 p-1 mt-3 border border-light">
+                    <table class="table">
+                        <thead class="table-dark tabela-shows">
+                          <tr>
+                            <th>Data</th>
+                            <th>Local</th>
+                            <th>Festival</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+    
+                          <tr class="table-dark tabela-shows">
+                            <th>11/ABR/25</th>
+                            <th>Indio, CA, US</th>
+                            <th>Coachella Valley Music and Arts Festival</th>
+                          </tr>
+                          
+                          <tr class="table-dark tabela-shows">
+                            <th>18/ABR/25</th>
+                            <th>Indio, CA, US</th>
+                            <th>Coachella Valley Music and Arts Festival</th>
+                          </tr>
+    
+                          <tr class="table-dark tabela-shows">
+                            <th>20/AGO/25</th>
+                            <th>Westherby, UK</th>
+                            <th>Leeds Festival</th>
+                          </tr>
+    
+                          <tr class="table-dark tabela-shows">
+                            <th>21/AGO/25</th>
+                            <th>Reading, UK</th>
+                            <th>Reading Festival</th>
+                          </tr>
+    
+                          <tr class="table-dark tabela-shows">
+                            <th>11/OUT/25</th>
+                            <th>Soweto, South Africa</th>
+                            <th>FNB Stadium</th>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer com os nossos nomes -->
+    <footer class="text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <ul class="list-unstyled">
+                        <li>Andrey Rebelatto</li>
+                        <li>Erick Anderson</li>
+                        <li>Eduardo Will</li>
+                    </ul>
+                    <p>Turma: 1°A</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Declarando o arquivo JS do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

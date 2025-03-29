@@ -1,0 +1,156 @@
+/* Colocando a imagem de fundo do container banner e diminuindo a opacidade */
+#banner-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    url(../assets/banner.jpeg) center/cover no-repeat;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border: 2px solid black;
+}
+
+h5{
+    font-size: 25px;
+}
+
+.lista01-custom{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.lista01-custom > li{
+    padding: 10px;
+}
+
+#artista-title {
+    transition: font-size 4s ease;
+}
+
+#banner-container:hover{    
+    #artista-title {
+        font-size: 100px;
+    }
+}
+
+/* Fontes importadas */
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 90px;
+    font-style: normal;
+  }
+
+.nunito-sans-custom {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+}
+
+.btn-custom-color{
+    background-color: #00cf64ff;
+    color: white;
+    font-weight: 800;
+}
+
+/* Capas de Álbuns */
+
+.album {
+    background-color: #222;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+.album img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.album p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.albuns-titulo {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.album:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 0 15px rgba(13, 202, 240, 0.6); 
+}
+
+.album:hover img {
+    border: 2px solid #0dcaf0; 
+}
+
+.tabela-shows {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Bebas Neue", sans-serif;
+}
+#corclick:active, #corclick:focus {
+    background-color: darkgreen;
+    color: white;
+}
+
+#corclick {
+    font-weight: 800;
+}
+
+#outrosestilos{
+    text-align: center;
+    font-weight: 800;
+}
+
+#listaseletores h1 {
+    font-weight: 800;
+
+}
+
+#listaseletores li:hover a {
+    border: 2px solid rgba(254, 255, 250, 0.055);
+    color:rgb(255, 255, 255)
+}
+
+#listaseletores li {
+    text-align: center;
+}
+
+#listaseletores a:first-child {
+    color: rgba(255, 255, 255, 0.7)
+}
+#listaseletores a:last-child {
+    color: rgba(187, 187, 187, 0.7)
+}
+
+#listaseletores ul {
+    list-style: none;
+}
+
+#estrela {
+    color: rgba(255, 231, 20, 0.7)
+}
+
+#pessoa {
+    color: rgba(77, 135, 243, 0.7)
+}
+
+#vinil {
+    color: rgba(250, 86, 228, 0.7)
+}
+
+#microfone {
+    color: rgba(201, 27, 27, 0.7)
+}
